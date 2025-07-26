@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# SQLite database files (si no quieres subir la DB local)
+test.db
+*.sqlite3
+
+# Docker files - si no quieres subir imágenes o volúmenes locales
+# Pero en general no se suben imágenes, solo Dockerfile y docker-compose.yml que ya tienes
+
+# Logs
+*.log
+
+# IDEs y editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Mac OS
+.DS_Store
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+
+# MyPy
+.mypy_cache/
+
+# Environments
+.env
+
+# Distribución y empaquetado
+dist/
+build/
+*.egg-info/
+
+# Otros archivos no necesarios
+*.bak
+*.tmp
+*.swp
