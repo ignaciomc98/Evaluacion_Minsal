@@ -1,5 +1,3 @@
-# app/tests/test_register.py
-
 from fastapi.testclient import TestClient
 from app.main import app
 
