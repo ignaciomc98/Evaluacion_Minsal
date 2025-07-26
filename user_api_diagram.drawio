@@ -1,0 +1,54 @@
+ 
+<mxfile host="app.diagrams.net" modified="2025-07-26T22:00:00.000Z" agent="5.0 (Windows)" etag="abcdef123456" version="20.0.2" type="device">
+  <diagram id="APIUserDiagram" name="User API">
+    <mxGraphModel dx="1140" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Cliente -->
+        <mxCell id="2" value="Cliente (Frontend/Postman)" style="rounded=1;fillColor=#D5E8D4;strokeColor=#82B366;" vertex="1" parent="1">
+          <mxGeometry x="20" y="40" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- FastAPI -->
+        <mxCell id="3" value="FastAPI (API REST)" style="rounded=1;fillColor=#FFE6CC;strokeColor=#D79B00;" vertex="1" parent="1">
+          <mxGeometry x="230" y="40" width="180" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Modelos -->
+        <mxCell id="4" value="Modelos (User, Phone)" style="rounded=1;fillColor=#E1D5E7;strokeColor=#9673A6;" vertex="1" parent="1">
+          <mxGeometry x="440" y="40" width="180" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Base de datos -->
+        <mxCell id="5" value="SQLite Base de Datos" style="rounded=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" vertex="1" parent="1">
+          <mxGeometry x="650" y="40" width="180" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Seguridad -->
+        <mxCell id="6" value="JWT &amp; Hash Password" style="rounded=1;fillColor=#F8CECC;strokeColor=#B85450;" vertex="1" parent="1">
+          <mxGeometry x="440" y="150" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Flechas -->
+        <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" edge="1" source="2" target="3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" edge="1" source="3" target="4" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" edge="1" source="4" target="5" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" edge="1" source="3" target="6" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
