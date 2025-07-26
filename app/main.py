@@ -25,7 +25,7 @@ app = FastAPI(
 # ---------------------
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Cambia "*" por URLs específicas en producción
+    allow_origins=["*"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -42,7 +42,7 @@ app.include_router(users, tags=["Usuarios"])
 
 @app.exception_handler(StarletteHTTPException)
 async def http_exception_handler(request: Request, exc: StarletteHTTPException):
-    # Captura excepciones HTTP y responde con {"mensaje": detalle}
+
     return JSONResponse(
         status_code=exc.status_code,
         content={"mensaje": exc.detail},
