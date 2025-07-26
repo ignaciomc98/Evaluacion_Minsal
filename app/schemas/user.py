@@ -21,11 +21,6 @@ class UserCreate(UserBase):
 
     @field_validator("password", mode="before")
     def validate_password(cls, value):
-        # Regex que exige:
-        # - al menos una mayúscula
-        # - al menos una minúscula
-        # - al menos dos dígitos (en cualquier parte, no necesariamente consecutivos)
-        # - mínimo 6 caracteres
         regex = r"^(?=.*[A-Z])(?=.*[a-z])(?=(?:.*\d){2,}).{6,}$"
         if not re.match(regex, value):
             raise ValueError(
@@ -51,5 +46,5 @@ class UserResponse(UserBase):
     model_config = {
         "from_attributes": True,
         "validate_by_name": True,
-        "populate_by_name": True  # para permitir alias en salida JSON
+        "populate_by_name": True 
     }
