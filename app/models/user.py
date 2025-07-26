@@ -1,5 +1,3 @@
-# app/models/user.py
-
 import uuid
 from datetime import datetime
 from sqlalchemy import Column, String, Boolean, DateTime
@@ -13,7 +11,6 @@ class User(Base):
     name = Column(String(100), nullable=False)
     email = Column(String(255), unique=True, nullable=False, index=True)
     
-    # ⚠️ En producción se debe guardar la contraseña hasheada (bcrypt, argon2, etc.)
     password = Column(String(255), nullable=False)
     
     token = Column(String(500), nullable=False)
@@ -28,7 +25,7 @@ class User(Base):
         "Phone",
         back_populates="user",
         cascade="all, delete-orphan",
-        lazy="joined"  # Optimiza para evitar queries adicionales al serializar
+        lazy="joined" 
     )
 
     def __repr__(self):
